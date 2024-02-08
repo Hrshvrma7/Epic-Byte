@@ -5,8 +5,7 @@ from email.message import EmailMessage
 import smtplib
 from decouple import config
 
-EMAIL = "warchallenger2710@gmail.com"
-PASSWORD = "wtnfqzatalckvnlh" # you have add passkey not the password. You can find it at account setting section. 
+EMAIL = "warchallenger2710@gmail.com" # you have add passkey not the password. You can find it at account setting section. 
 
 def find_my_ip():
     ip_address = requests.get('https://api.ipify.org?format=json').json()
