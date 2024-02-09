@@ -90,15 +90,18 @@ if __name__ == "__main__":
             if "how are you" in query:
                 speak("I am absolutely fine Sir. What's about you?")
 
-            elif "open command prompt" in query:
+            elif "judges" in query:
+                speak("Hi Jury! Nice to meet you. How can I help you today?")
+
+            elif "command prompt" in query:
                 speak("Opening command prompt")
                 os.system('start cmd')
 
-            elif "open camera" in query:
+            elif "camera" in query:
                 speak("Opening the Camera")
                 sp.run('start microsoft.windows.camera:',shell=True)
             
-            elif "open notepad" in query:
+            elif "notepad" in query:
                 speak("Opening Notepad")
                 notepad_path = "C:\\Windows\\notepad.exe"
                 os.startfile(notepad_path)
@@ -113,7 +116,7 @@ if __name__ == "__main__":
                 video = take_command().lower()
                 youtube(video)
             
-            elif "open google" in query:
+            elif "google" in query:
                 speak(f"What should I search for on Google, Sir?")
                 query = take_command().lower()
                 search_on_google(query)
@@ -150,7 +153,7 @@ if __name__ == "__main__":
             #     else:
             #         speak("Sorry, I am unable to send this email. Please check the error log.")
 
-            elif "give me some news" in query:
+            elif "news" in query:
                 speak(f"I am reading out the latest headline of today, Sir.")
                 speak(get_news())
                 speak("I am printing it on the terminal as well, Sir.")
